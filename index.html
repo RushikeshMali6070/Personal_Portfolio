@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rushikesh Mali - Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rushikesh Mali Portfolio" name="keywords">
+    <meta content="Personal Portfolio of Rushikesh Mali, Computer Science Student" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Portfolio</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#experience" class="nav-item nav-link">Experience</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Portfolio</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#education" class="nav-item nav-link">Education</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <button class="btn btn-sm btn-outline-secondary ms-2 theme-toggle" id="themeToggle"><i
+                        class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3">I'm</h3>
+                    <h1 class="display-3 mb-3">Rushikesh Mali</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Computer Science Student, Web Developer, Tech Enthusiast, Problem
+                        Solver</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="Resume/Rushikesh Mali Resume 6.pdf" download="Rushikesh_Mali_Resume.pdf" class="btn btn-primary py-3 px-4 me-3"><i class="fa fa-download me-2"></i>Download Resume</a>
+                        <button type="button" class="btn btn-primary py-3 px-4 me-3" data-bs-toggle="modal"
+                            data-bs-target="#resumeModal" aria-label="View Resume" title="View Resume">
+                            View Resume <i class="fa fa-eye ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+                    <!-- Placeholder for profile image -->
+                    <img class="img-fluid hero-img shadow" src="img/me.jpeg" alt="Rushikesh Mali"
+                        style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Resume Modal Start -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel">Resume Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-4x3">
+                        <iframe src="Resume/Rushikesh Mali Resume 6.pdf" id="resumeFrame"
+                            title="Resume Preview" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Resume Modal End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5 text-center">About Me</h1>
+                    <p class="mb-5 text-center mx-auto" style="line-height: 1.8; font-size: 1.1rem; max-width: 900px;">
+                        Enthusiastic and extroverted B.Tech Computer Science student at MIT ADT University with a
+                        passion for technology and innovation. Strong leadership experience as Vice President, Joint
+                        Secretary, and Executive Member of Shivray Club. Skilled in teamwork, communication, and
+                        problem-solving with a creative mindset and interest in modern technologies.
+                    </p>
+                    <div class="row bg-light p-4 rounded shadow-sm mx-auto" style="max-width: 900px;">
+                        <div class="col-md-6 py-3 border-bottom">
+                            <h6 class="mb-0"><i class="fa fa-user text-primary me-2"></i>Name: <span
+                                    class="text-secondary fw-normal ms-2">Rushikesh Mahadev Mali</span></h6>
+                        </div>
+                        <div class="col-md-6 py-3 border-bottom">
+                            <h6 class="mb-0"><i class="fa fa-laptop-code text-primary me-2"></i>Role: <span
+                                    class="text-secondary fw-normal ms-2">B.Tech CSE Student (3rd Year)</span></h6>
+                        </div>
+                        <div class="col-md-6 py-3 border-bottom">
+                            <h6 class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location: <span
+                                    class="text-secondary fw-normal ms-2">Loni Kalbhor, Pune, India</span></h6>
+                        </div>
+                        <div class="col-md-6 py-3 border-bottom">
+                            <h6 class="mb-0"><i class="fa fa-envelope text-primary me-2"></i>Email: <span
+                                    class="text-secondary fw-normal ms-2">rushimali6070@gmail.com</span></h6>
+                        </div>
+                        <div class="col-md-12 py-3">
+                            <h6 class="mb-0"><i class="fa fa-phone-alt text-primary me-2"></i>Phone: <span
+                                    class="text-secondary fw-normal ms-2">+91 7798956070</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Skills Start -->
+    <div class="container-xxl py-6 pb-5 bg-light" id="skill">
+        <div class="container">
+            <h1 class="display-5 mb-5 text-center wow fadeInUp" data-wow-delay="0.1s">My Skills</h1>
+
+            <div class="skills-section wow fadeInUp" data-wow-delay="0.2s">
+
+                <!-- Languages -->
+                <div class="skill-group mb-4">
+                    <h4 class="skill-category-title">Languages</h4>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="devicon-c-plain colored"></i> C</span>
+                        <span class="skill-chip"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span class="skill-chip"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-chip"><i class="devicon-java-plain colored"></i> Advanced Java</span>
+                        <span class="skill-chip"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-chip"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-chip"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-chip"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-chip"><i class="devicon-mysql-plain colored"></i> SQL</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="skill-group mb-4">
+                    <h4 class="skill-category-title">Frameworks &amp; Libraries</h4>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="devicon-react-original colored"></i> React.js</span>
+                        <span class="skill-chip"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="skill-chip"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-group mb-4">
+                    <h4 class="skill-category-title">Tools &amp; Platforms</h4>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-chip"><i class="fab fa-github" style="color:#333;"></i> GitHub</span>
+                        <span class="skill-chip"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span class="skill-chip"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        <span class="skill-chip"><i class="devicon-docker-plain colored"></i> Docker</span>
+                        <span class="skill-chip"><i class="devicon-canva-original colored"></i> Canva</span>
+                        <span class="skill-chip"><i class="fas fa-paint-brush" style="color:#31a8ff;"></i> Photoshop</span>
+                        <span class="skill-chip"><i class="fas fa-sliders-h" style="color:#31c5f0;"></i> Lightroom</span>
+                        <span class="skill-chip"><i class="fas fa-film" style="color:#00c8ff;"></i> CapCut</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-group mb-4">
+                    <h4 class="skill-category-title">Databases</h4>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-chip"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+                        <span class="skill-chip"><i class="devicon-firebase-plain colored"></i> Firebase Realtime DB</span>
+                    </div>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="skill-group mb-2">
+                    <h4 class="skill-category-title">Core Competencies</h4>
+                    <div class="skill-chips">
+                        <span class="skill-chip competency"><i class="fas fa-sitemap"></i> DSA</span>
+                        <span class="skill-chip competency"><i class="fas fa-cubes"></i> OOP</span>
+                        <span class="skill-chip competency"><i class="fas fa-database"></i> DBMS</span>
+                        <span class="skill-chip competency"><i class="fas fa-drafting-compass"></i> System Design</span>
+                        <span class="skill-chip competency"><i class="fas fa-globe"></i> Web Development</span>
+                        <span class="skill-chip competency"><i class="fas fa-microchip"></i> Embedded Systems</span>
+                        <span class="skill-chip competency"><i class="fas fa-network-wired"></i> Computer Networks</span>
+                        <span class="skill-chip competency"><i class="fas fa-server"></i> Operating Systems</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <style>
+                .skills-section {
+                    background: #fff;
+                    border-radius: 12px;
+                    padding: 2rem 2.5rem;
+                    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+                }
+                .skill-group {
+                    border-bottom: 1px solid #f0f0f0;
+                    padding-bottom: 1.2rem;
+                }
+                .skill-group:last-child {
+                    border-bottom: none;
+                    margin-bottom: 0 !important;
+                    padding-bottom: 0;
+                }
+                .skill-category-title {
+                    font-size: 1.15rem;
+                    font-weight: 700;
+                    color: #222;
+                    margin-bottom: 0.75rem;
+                }
+                .skill-chips {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                }
+                .skill-chip {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    background: #f5f6fa;
+                    border: 1px solid #e2e4ea;
+                    border-radius: 6px;
+                    padding: 5px 12px;
+                    font-size: 0.92rem;
+                    color: #333;
+                    font-weight: 500;
+                    transition: background 0.2s, box-shadow 0.2s;
+                }
+                .skill-chip:hover {
+                    background: #e8f0fe;
+                    box-shadow: 0 2px 6px rgba(13,110,253,.15);
+                }
+                .skill-chip i {
+                    font-size: 1.15rem;
+                }
+                .skill-chip.competency {
+                    background: #eef2ff;
+                    border-color: #c7d2fe;
+                    color: #3730a3;
+                }
+                .skill-chip.competency i {
+                    color: #4f46e5;
+                    font-size: 0.95rem;
+                }
+                .skill-chip.competency:hover {
+                    background: #e0e7ff;
+                }
+            </style>
+
+        </div>
+    </div>
+    <!-- Skills End -->
+
+
+
+    <!-- Experience Start -->
+    <div class="container-xxl py-6" id="experience">
+        <div class="container">
+            <h1 class="display-5 mb-5 text-center wow fadeInUp" data-wow-delay="0.1s">Leadership Experience</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="border-start border-3 border-primary pt-2 ps-4 mb-4 ms-3">
+                        <div class="position-relative mb-5">
+                            <i class="fa fa-circle text-primary position-absolute bg-white"
+                                style="top: 5px; left: -32px; font-size: 20px;"></i>
+                            <h4 class="mb-1">Joint Secretary</h4>
+                            <p class="mb-2 text-primary"><strong>Shivray Dhol Tasha Club</strong> | <small
+                                    class="text-muted">2026 - 2027</small></p>
+                            <p class="text-muted">Organized club activities, managed coordination between different
+                                teams, and facilitated smooth operation of regular practices and performances.</p>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <i class="fa fa-circle text-primary position-absolute bg-white"
+                                style="top: 5px; left: -32px; font-size: 20px;"></i>
+                            <h4 class="mb-1">Vice President</h4>
+                            <p class="mb-2 text-primary"><strong>Shivray Dhol Tasha Club</strong> | <small
+                                    class="text-muted">2025 - 2026</small></p>
+                            <p class="text-muted">Led events, managed teams, and significantly increased student
+                                participation. Oversaw strategic planning and execution of club activities.</p>
+                        </div>
+                        <div class="position-relative mb-0">
+                            <i class="fa fa-circle text-primary position-absolute bg-white"
+                                style="top: 5px; left: -32px; font-size: 20px;"></i>
+                            <h4 class="mb-1">Executive Member</h4>
+                            <p class="mb-2 text-primary"><strong>Shivray Dhol Tasha Club</strong> | <small
+                                    class="text-muted">2024 - 2025</small></p>
+                            <p class="text-muted">Assisted in organizing events and represented the club at various
+                                platforms, contributing to team building and creative planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Experience End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5 bg-light" id="project">
+        <div class="container">
+            <h1 class="display-5 mb-5 text-center wow fadeInUp" data-wow-delay="0.1s">My Projects</h1>
+            <div class="row g-4">
+
+                <!-- Project 1: CNG Online Slot Booking System -->
+                <div class="col-md-6">
+                    <div class="project-card bg-white rounded shadow-sm h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative">
+                            <div class="project-banner d-flex align-items-center justify-content-center"
+                                style="height:220px; background: linear-gradient(135deg,#0d6efd 0%,#0dcaf0 100%);">
+                                <i class="fas fa-gas-pump text-white" style="font-size:5rem; opacity:.85;"></i>
+                            </div>
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                                style="background: rgba(0,0,0,0.55); opacity:0; transition:.3s;">
+                                <a class="btn btn-light btn-square rounded-circle m-1" href="https://github.com/RushikeshMali6070/CNG-Online-Slot-Booking-System"
+                                    target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-2 px-3 py-2"
+                                style="font-size:.78rem;">July – Dec 2025</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h4 class="mb-2 text-primary">CNG Online Slot Booking System</h4>
+                            <p class="text-muted mb-3 flex-grow-1">Built a production-ready booking web app with PHP
+                                REST backend, secure authentication, CRUD operations, and an admin dashboard — reducing
+                                station wait time by ~40%.</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge bg-secondary fw-normal">HTML</span>
+                                <span class="badge bg-secondary fw-normal">CSS</span>
+                                <span class="badge bg-secondary fw-normal">JavaScript</span>
+                                <span class="badge bg-secondary fw-normal">PHP</span>
+                                <span class="badge bg-secondary fw-normal">MySQL</span>
+                                <span class="badge bg-secondary fw-normal">Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/RushikeshMali6070/CNG-Online-Slot-Booking-System"
+                                target="_blank" class="btn btn-outline-primary btn-sm mt-auto w-100">View on GitHub <i
+                                    class="fab fa-github ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Blockchain-Based Degree Verification (CertiVault) -->
+                <div class="col-md-6">
+                    <div class="project-card bg-white rounded shadow-sm h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative">
+                            <div class="project-banner d-flex align-items-center justify-content-center"
+                                style="height:220px; background: linear-gradient(135deg,#6f42c1 0%,#d63384 100%);">
+                                <i class="fas fa-shield-alt text-white" style="font-size:5rem; opacity:.85;"></i>
+                            </div>
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                                style="background: rgba(0,0,0,0.55); opacity:0; transition:.3s;">
+                                <a class="btn btn-light btn-square rounded-circle m-1" href="https://github.com/"
+                                    target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <span class="badge bg-purple position-absolute top-0 end-0 m-2 px-3 py-2"
+                                style="font-size:.78rem; background:#6f42c1;">Jan – Apr 2026</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h4 class="mb-2 text-primary">CertiVault – Blockchain Degree Verification</h4>
+                            <p class="text-muted mb-3 flex-grow-1">Developed a secure blockchain-based platform for
+                                degree verification with QR-based certificate validation, fraud prevention, and instant
+                                full-stack credential verification.</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge bg-secondary fw-normal">React.js</span>
+                                <span class="badge bg-secondary fw-normal">Node.js</span>
+                                <span class="badge bg-secondary fw-normal">MongoDB</span>
+                                <span class="badge bg-secondary fw-normal">Blockchain</span>
+                            </div>
+                            <a href="https://github.com/" target="_blank"
+                                class="btn btn-outline-primary btn-sm mt-auto w-100">View on GitHub <i
+                                    class="fab fa-github ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Smart Shetkari -->
+                <div class="col-md-6">
+                    <div class="project-card bg-white rounded shadow-sm h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative">
+                            <div class="project-banner d-flex align-items-center justify-content-center"
+                                style="height:220px; background: linear-gradient(135deg,#198754 0%,#20c997 100%);">
+                                <i class="fas fa-leaf text-white" style="font-size:5rem; opacity:.85;"></i>
+                            </div>
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                                style="background: rgba(0,0,0,0.55); opacity:0; transition:.3s;">
+                                <a class="btn btn-light btn-square rounded-circle m-1" href="https://github.com/"
+                                    target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-3 py-2"
+                                style="font-size:.78rem;">Jan – May 2025</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h4 class="mb-2 text-primary">Smart Shetkari – Farmer to Buyer Marketplace</h4>
+                            <p class="text-muted mb-3 flex-grow-1">Developed an Android marketplace app enabling direct
+                                farmer-to-buyer transactions with Firebase Auth, real-time DB, and category-based
+                                product filtering.</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge bg-secondary fw-normal">Android Studio</span>
+                                <span class="badge bg-secondary fw-normal">Java</span>
+                                <span class="badge bg-secondary fw-normal">Firebase</span>
+                                <span class="badge bg-secondary fw-normal">XML</span>
+                                <span class="badge bg-secondary fw-normal">SQLite</span>
+                                <span class="badge bg-secondary fw-normal">REST API</span>
+                            </div>
+                            <a href="https://github.com/" target="_blank"
+                                class="btn btn-outline-primary btn-sm mt-auto w-100">View on GitHub <i
+                                    class="fab fa-github ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Interactive Quiz Application -->
+                <div class="col-md-6">
+                    <div class="project-card bg-white rounded shadow-sm h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative">
+                            <div class="project-banner d-flex align-items-center justify-content-center"
+                                style="height:220px; background: linear-gradient(135deg,#fd7e14 0%,#ffc107 100%);">
+                                <i class="fas fa-question-circle text-white" style="font-size:5rem; opacity:.85;"></i>
+                            </div>
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                                style="background: rgba(0,0,0,0.55); opacity:0; transition:.3s;">
+                                <a class="btn btn-light btn-square rounded-circle m-1" href="https://github.com/RushikeshMali6070/Quiz-Application"
+                                    target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2 px-3 py-2"
+                                style="font-size:.78rem;">July – Dec 2024</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h4 class="mb-2 text-primary">Interactive Quiz Application</h4>
+                            <p class="text-muted mb-3 flex-grow-1">Built a responsive React.js SPA with state management
+                                via hooks, real-time score tracking, countdown timer, and mobile-first animated UI.</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge bg-secondary fw-normal">HTML</span>
+                                <span class="badge bg-secondary fw-normal">CSS</span>
+                                <span class="badge bg-secondary fw-normal">JavaScript</span>
+                                <span class="badge bg-secondary fw-normal">React.js</span>
+                            </div>
+                            <a href="https://github.com/RushikeshMali6070/Quiz-Application" target="_blank"
+                                class="btn btn-outline-primary btn-sm mt-auto w-100">View on GitHub <i
+                                    class="fab fa-github ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Smart Door Opening System -->
+                <div class="col-md-6">
+                    <div class="project-card bg-white rounded shadow-sm h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative">
+                            <div class="project-banner d-flex align-items-center justify-content-center"
+                                style="height:220px; background: linear-gradient(135deg,#495057 0%,#6c757d 100%);">
+                                <i class="fas fa-door-open text-white" style="font-size:5rem; opacity:.85;"></i>
+                            </div>
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                                style="background: rgba(0,0,0,0.55); opacity:0; transition:.3s;">
+                                <a class="btn btn-light btn-square rounded-circle m-1" href="#"
+                                    title="Hardware Project"><i class="fas fa-microchip"></i></a>
+                            </div>
+                            <span class="badge bg-secondary position-absolute top-0 end-0 m-2 px-3 py-2"
+                                style="font-size:.78rem;">Jan – Apr 2023</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h4 class="mb-2 text-primary">Smart Door Opening System</h4>
+                            <p class="text-muted mb-3 flex-grow-1">Designed a PIN-based door automation system with
+                                solenoid lock control, OLED status display, and sub-second response time using Embedded
+                                C.</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge bg-secondary fw-normal">Arduino Mega</span>
+                                <span class="badge bg-secondary fw-normal">4×4 Keypad</span>
+                                <span class="badge bg-secondary fw-normal">Servo Motor</span>
+                                <span class="badge bg-secondary fw-normal">OLED Display</span>
+                                <span class="badge bg-secondary fw-normal">Embedded C</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-secondary btn-sm mt-auto w-100">Hardware Project <i
+                                    class="fas fa-microchip ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <style>
+                .project-card:hover .project-overlay {
+                    opacity: 1 !important;
+                }
+
+                .project-card {
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .project-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+                }
+
+                .project-banner {
+                    transition: filter 0.3s ease;
+                }
+
+                .project-card:hover .project-banner {
+                    filter: brightness(0.85);
+                }
+            </style>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Education & Certifications Start -->
+    <div class="container-xxl py-6" id="education">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Education -->
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5"><i class="fa fa-graduation-cap text-primary me-3"></i>Education</h1>
+                    <div class="border-start border-3 border-primary pt-2 ps-4 mb-4 ms-3">
+                        <div class="position-relative mb-5">
+                            <i class="fa fa-circle text-primary position-absolute bg-white"
+                                style="top: 5px; left: -32px; font-size: 20px;"></i>
+                            <h4 class="mb-1">B.Tech Computer Science Engineering</h4>
+                            <p class="mb-2 text-primary"><strong>MIT ADT University</strong> | <small
+                                    class="text-muted">2026 - Present</small></p>
+                            <p class="mb-0 fs-5">CGPA: <span class="badge bg-success">7.98</span></p>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <i class="fa fa-circle text-primary position-absolute bg-white"
+                                style="top: 5px; left: -32px; font-size: 20px;"></i>
+                            <h4 class="mb-1">HSC (Science)</h4>
+                            <p class="mb-2 text-primary"><strong>Yashwantrao Chavan Jr College</strong> | <small
+                                    class="text-muted">2021 - 2023</small></p>
+                            <p class="mb-0 fs-5">Percentage: <span class="badge bg-success">71.17%</span></p>
+                        </div>
+                        <div class="position-relative mb-0">
+                            <i class="fa fa-circle text-primary position-absolute bg-white"
+                                style="top: 5px; left: -32px; font-size: 20px;"></i>
+                            <h4 class="mb-1">SSC</h4>
+                            <p class="mb-2 text-primary"><strong>Adarsh Balak Mandir Highschool</strong> | <small
+                                    class="text-muted">2020 - 2021</small></p>
+                            <p class="mb-0 fs-5">Percentage: <span class="badge bg-success">80.00%</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications & Achievements -->
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4"><i class="fa fa-certificate text-primary me-3"></i>Certifications</h1>
+                    <div class="row g-3 mb-5">
+                        <div class="col-sm-12">
+                            <div
+                                class="p-3 bg-light rounded shadow-sm border-start border-4 border-primary d-flex align-items-center">
+                                <i class="fa fa-check-circle text-primary me-3 fs-4"></i>
+                                <h5 class="mb-0">Google: Foundations Data</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div
+                                class="p-3 bg-light rounded shadow-sm border-start border-4 border-primary d-flex align-items-center">
+                                <i class="fa fa-check-circle text-primary me-3 fs-4"></i>
+                                <h5 class="mb-0">Microsoft: Networking & Cloud</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div
+                                class="p-3 bg-light rounded shadow-sm border-start border-4 border-primary d-flex align-items-center">
+                                <i class="fa fa-check-circle text-primary me-3 fs-4"></i>
+                                <h5 class="mb-0">IBM: Generative AI</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div
+                                class="p-3 bg-light rounded shadow-sm border-start border-4 border-primary d-flex align-items-center">
+                                <i class="fa fa-check-circle text-primary me-3 fs-4"></i>
+                                <h5 class="mb-0">SkillUp: Generative AI App Dev</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div
+                                class="p-3 bg-light rounded shadow-sm border-start border-4 border-primary d-flex align-items-center">
+                                <i class="fa fa-check-circle text-primary me-3 fs-4"></i>
+                                <h5 class="mb-0">AWS: Cloud Technical Essentials</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="display-5 mb-4"><i class="fa fa-trophy text-primary me-3"></i>Achievements</h1>
+                    <ul class="list-group list-group-flush border-0">
+                        <li class="list-group-item bg-transparent d-flex align-items-center px-0 py-3"><i
+                                class="fa fa-medal text-warning me-3 fs-3"></i>
+                            <h5 class="mb-0">Gold Medal – Taluka Level Taekwondo</h5>
+                        </li>
+                        <li class="list-group-item bg-transparent d-flex align-items-center px-0 py-3"><i
+                                class="fa fa-medal text-secondary me-3 fs-3"></i>
+                            <h5 class="mb-0">Silver Medal – District Level Taekwondo</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Education & Certifications End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5 bg-light pt-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-5 mb-0">Contact Me</h1>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="p-5 bg-white rounded shadow-sm h-100">
+                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i> Address:</p>
+                        <h4 class="fw-bold mb-4">Loni Kalbhor, Pune, Maharashtra, India</h4>
+                        <hr class="w-100 bg-primary" style="height: 2px;">
+                        <p class="mb-2 mt-4"><i class="fa fa-phone-alt text-primary me-2"></i> Call me:</p>
+                        <h4 class="fw-bold mb-4"><a href="tel:+917798956070" class="text-dark">+91 7798956070</a></h4>
+                        <hr class="w-100 bg-primary" style="height: 2px;">
+                        <p class="mb-2 mt-4"><i class="fa fa-envelope text-primary me-2"></i> Mail me:</p>
+                        <h4 class="fw-bold mb-4" style="word-break: break-all;"><a href="mailto:rushimali6070@gmail.com"
+                                class="text-dark">rushimali6070@gmail.com</a></h4>
+                        <hr class="w-100 bg-primary" style="height: 2px;">
+                        <p class="mb-2 mt-4"><i class="fa fa-share-alt text-primary me-2"></i> Follow me:</p>
+                        <div class="d-flex pt-2">
+                                <a class="btn btn-square btn-outline-primary me-2 rounded-circle" href="https://github.com/RushikeshMali6070" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i
+                                    class="fab fa-github"></i></a>
+                                <a class="btn btn-square btn-outline-primary me-2 rounded-circle" href="https://linkedin.com/in/rushikesh-mali-146728307/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="p-5 bg-white rounded shadow-sm h-100">
+                        <p class="mb-4 text-muted fs-5">I'm always open to discussing new projects, creative ideas, or
+                            opportunities to be part of your vision. Fill out the form below!</p>
+                        <form id="contact-form" class="needs-validation" novalidate
+                            onsubmit="return validateContactForm(event)">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Your Name *</label>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Your Email *</label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="subject"
+                                            placeholder="Subject" required>
+                                        <label for="subject">Subject *</label>
+                                        <div class="invalid-feedback">Please enter a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-light border-0"
+                                            placeholder="Leave a message here" id="message" style="height: 150px"
+                                            required></textarea>
+                                        <label for="message">Message *</label>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-primary py-3 px-5 w-100 fs-5 fw-bold" type="submit">Send
+                                        Message <i class="fa fa-paper-plane ms-2"></i></button>
+                                </div>
+                                <div id="form-message-success"
+                                    class="col-12 mt-3 text-success d-none text-center fw-bold fs-5">
+                                    <i class="fa fa-check-circle me-2"></i>Message sent successfully!
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0 fs-5">&copy;
+                <script>document.write(new Date().getFullYear())</script> <span class="text-primary fw-bold">Rushikesh
+                    Mali</span>. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top rounded-circle shadow"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Form Validation Script
+        function validateContactForm(event) {
+            event.preventDefault();
+            var form = document.getElementById('contact-form');
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+            } else {
+                document.getElementById('form-message-success').classList.remove('d-none');
+                setTimeout(() => {
+                    form.reset();
+                    document.getElementById('form-message-success').classList.add('d-none');
+                    form.classList.remove('was-validated');
+                }, 3000);
+            }
+            form.classList.add('was-validated');
+            return false;
+        }
+    </script>
+</body>
+
+</html>
