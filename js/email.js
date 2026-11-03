@@ -18,10 +18,17 @@
    * Centralizes configuration to make future updates easier
    */
   const AUTO_REPLY_CONFIG = {
+<<<<<<< HEAD
     serviceID: '',    // EmailJS service ID for sending emails
     templateID: '',  // EmailJS template ID for auto-replies
     fromName: '',       // Sender name that appears in auto-replies
     senderEmail: '' // Your email address (used as the sender, not the recipient)
+=======
+    serviceID: 'service_x2b99xp',    // EmailJS service ID for sending emails
+    templateID: 'template_cx83k4i',  // EmailJS template ID for auto-replies
+    fromName: 'Anurag Bodkhe',       // Sender name that appears in auto-replies
+    senderEmail: 'bodkheanurag235@gmail.com' // Your email address (used as the sender, not the recipient)
+>>>>>>> e78a93f59153e910f901dfa6157f956b68bb7a2b
   };
   
   // Log configuration to help with debugging
